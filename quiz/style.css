@@ -15,14 +15,19 @@
 }
 
 body{
-    background-color: #121212;
+    background-color: #000023;
     min-height: 100vh;
 }
 
 
 header{
     margin: 1rem 0;
-    text-align: center;
+    border-bottom: 1px solid #334155;
+    font-size: 1.3rem;
+}
+
+header h1{
+    margin: 1rem 0 1.5rem;
 }
 
 main{
@@ -32,21 +37,72 @@ main{
     gap: 15px;
 }
 
+
+.quiz-item{
+    margin-top: 24px;
+    border: 1px solid #475569;
+    border-radius: 6px;
+}
+
+.quiz-item h3{
+    padding: 1rem 1.8rem;
+    overflow: hidden;
+    background-color: #230056;
+}
+
+.quiz-item dl{
+    padding: 1.25rem 1.4rem;
+    display: grid;
+    gap: 8px;
+}
+
+.quiz-item dl dt{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input{
+    all:unset;
+    border: 1px solid #94A4B8;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+input:checked{
+   border: 1px solid #7800AB;
+}
+
+input:checked:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #7800AB;
+    border-radius: 50%;
+}
+
 #container{
     min-height:100vh;
-    max-width: 760px;
+    width: 90%;
+    max-width: 900px;
     margin: 2rem auto 5rem;
     padding: 8px;
-    border: 1px solid #A3E635;
-    border-radius: 6px
 }
 
 #acertos{
     text-align: center;
-    background-color: #A3E635;
+    background-color: #450078;
     position: fixed;
     bottom: 0;
     left:0;
     width: 100%;
     padding: 8px;
 }
+
